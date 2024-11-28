@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Bento-box/static/css/main.dfbba22c.css",
+    "main.js": "/Bento-box/static/js/main.0197aaf7.js",
+    "index.html": "/Bento-box/index.html",
+    "main.dfbba22c.css.map": "/Bento-box/static/css/main.dfbba22c.css.map",
+    "main.0197aaf7.js.map": "/Bento-box/static/js/main.0197aaf7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dfbba22c.css",
+    "static/js/main.0197aaf7.js"
+  ]
+}
