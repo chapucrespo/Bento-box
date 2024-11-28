@@ -12,7 +12,7 @@ function App() {
           <BentoElement className={element.class}>{element.value}</BentoElement>
         ))}
       </Container>
-      <Footer><p>coded by <a href='https://github.com/chapucrespo'>Chapu Crespo</a></p></Footer>
+      <Footer><p>Challenge by <a href='https://www.frontendmentor.io/home'>Frontend mentor</a>, coded by <a href='https://github.com/chapucrespo'>Chapu Crespo</a></p></Footer>
       </Main>
     </ThemeProvider>
   );
