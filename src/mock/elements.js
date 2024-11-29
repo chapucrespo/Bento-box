@@ -1,5 +1,4 @@
 const elements = [
-    {id: 1, value: 'un elemento', class: 'a'},
     {id: 2, value: 'un elemento', class: 'b'},
     {id: 3, value: 'un elemento', class: 'c'},
     {id: 4, value: 'un elemento'},
