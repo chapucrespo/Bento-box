@@ -34,14 +34,14 @@ export const Container = styled.div`
 `
 
 export const BentoElement = styled.div`
-    contain: content;
+    display: flex;
+    flex-direction: column;
     border-radius: 8px;
     padding: 0 15px;
     background: ${({background, theme}) => `${theme.colors[background]}`};
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    overflow: hidden;
 `
 
 export const Footer = styled.div`
@@ -56,7 +56,7 @@ export const Text = styled.p`
     color: ${({theme, color}) => `${theme.colors[color]}`};
     font-weight: ${({big}) => big ? '500' : '300'};
     font-size: ${({size}) => size && `${size}`};
-    text-align: ${({center}) => center && 'center'};
+    text-align: ${({textAlign}) => textAlign ? `${textAlign}` : 'center'};
 
     span {
         color: ${({theme, color}) => `${theme.colors[color]}`};
@@ -65,6 +65,8 @@ export const Text = styled.p`
 `
 
 export const Image = styled.img`
-    max-width: 100%; 
+    max-width: 100%;
+    width: ${({width}) => width && `${width}%`};
+    position: ${({relativePosition}) => relativePosition && 'relative'};
     height: auto; 
 `
