@@ -124,7 +124,7 @@ export const Text = styled.p`
 export const Image = styled.img`
     max-width: 100%;
     width: ${({width}) => width && `${width}%`};
-    position: ${({relativePosition}) => relativePosition && 'relative'};
+    position: ${({position}) => position && `${position}`};
     height: auto; 
     align-self: ${({alignSelf}) => alignSelf && `${alignSelf}`};
 `
