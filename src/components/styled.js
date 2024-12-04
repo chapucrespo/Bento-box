@@ -3,13 +3,19 @@ import styled from "styled-components";
 export const Main = styled.div`
     display: flex;
     flex-direction: column;
-    height: 90vh
+    height: 90vh;
 `
 
 export const Container = styled.div`
-    display: grid; 
+    padding: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+
+    /* display: grid; 
     grid-template-columns: repeat(4, 20%);
     grid-template-rows: 20% 20% 10% 20% 10% 20%;
+    justify-content: center; 
+    align-content: center;
     gap: 10px; 
     width: 100%;
     height: 100%;
@@ -30,22 +36,72 @@ export const Container = styled.div`
 
     .b, .d, .e, .g, .h {
         grid-row: span 2;
+    } */
+
+    .a {
+        order: 6;
+    }
+
+    .b {
+        order: 0;
+    }
+
+    .c {
+        order: 3;
+    }
+
+    .d { 
+        order: 1;
+    }
+
+    .e {
+        order: 2;
+    }
+
+    .f {
+        order: 7;
+    }
+
+    .g {
+        order: 5;
+    }
+
+    .h {
+        order: 4;
     }
 `
 
 export const BentoElement = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    border-radius: 8px;
+    padding: 15px;
+    background: ${({background, theme}) => `${theme.colors[background]}`};
+    align-items: center; 
+    margin-bottom: 10px;
+    overflow: hidden;
+
+    /* display: flex;
+    flex-flow: column nowrap;
     border-radius: 8px;
     padding: 0 15px;
     background: ${({background, theme}) => `${theme.colors[background]}`};
     align-items: center;
     justify-content: space-evenly;
     overflow: hidden;
+
+    Text {
+        flex-grow: 2;
+    }
+
+    Image {
+        flex-shrink: 4;
+    } */
 `
 
 export const Footer = styled.div`
     margin: 0 auto;
+    text-align: center;
 
     a {
         color: ${({theme}) => theme.colors.darkPurple}
@@ -54,12 +110,13 @@ export const Footer = styled.div`
 
 export const Text = styled.p`
     color: ${({theme, color}) => `${theme.colors[color]}`};
-    font-weight: ${({big}) => big ? '500' : '300'};
+    font-weight: ${({fontWeight}) => `${fontWeight}`};
     font-size: ${({size}) => size && `${size}`};
     text-align: ${({textAlign}) => textAlign ? `${textAlign}` : 'center'};
+    margin: 10px;
 
     span {
-        color: ${({theme, color}) => `${theme.colors[color]}`};
+        color: ${({theme, spanColor}) => `${theme.colors[spanColor]}`};
         font-style: italic;
     }
 `
@@ -69,4 +126,5 @@ export const Image = styled.img`
     width: ${({width}) => width && `${width}%`};
     position: ${({relativePosition}) => relativePosition && 'relative'};
     height: auto; 
+    align-self: ${({alignSelf}) => alignSelf && `${alignSelf}`};
 `
