@@ -6,7 +6,7 @@ const GrowFollowers = () => {
     return (
         <BentoElement background='darkPurple' className='h'>
             <Image src={growth} alt='social media' width='70'/>
-            <Text color='white' big size='35px' fontWeight='700'>Grow followers with non-stop content</Text>
+            <Text color='white' size='35px' fontWeight='700'>Grow followers with non-stop content</Text>
         </BentoElement>
     )
 }
