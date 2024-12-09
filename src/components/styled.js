@@ -112,7 +112,7 @@ export const Text = styled.p`
     color: ${({theme, color}) => `${theme.colors[color]}`};
     font-weight: ${({fontWeight}) => `${fontWeight}`};
     font-size: ${({size}) => size && `${size}`};
-    text-align: ${({textAlign}) => textAlign ? `${textAlign}` : 'center'};
+    text-align: ${({text}) => text && `${text}`};
     margin: 10px;
 
     span {
@@ -126,5 +126,5 @@ export const Image = styled.img`
     width: ${({width}) => width && `${width}%`};
     position: ${({position}) => position && `${position}`};
     height: auto; 
-    align-self: ${({alignSelf}) => alignSelf && `${alignSelf}`};
+    align-self: ${({align}) => align && `${align}`};
 `

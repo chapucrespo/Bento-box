@@ -5,9 +5,9 @@ import audience from '../assets/images/illustration-audience-growth.webp'
 const AudienceGrowth = () => {
     return (
         <BentoElement background='white' className='g'>
-            <Text color='black' big size='60px' fontWeight='700' textAlign='left'>56%</Text>
-            <Text color='black' big size='20px' fontWeight='400' textAlign='left'>faster audience growth</Text>
-            <Image src={audience} alt='social media' width='60' alignSelf='self-start'/>
+            <Text color='black' size='60px' fontWeight='700' text='left'>56%</Text>
+            <Text color='black' size='20px' fontWeight='400' text='left'>faster audience growth</Text>
+            <Image src={audience} alt='social media' width='60' align='center'/>
         </BentoElement>
     )
 }
